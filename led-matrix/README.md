@@ -1,15 +1,10 @@
 LED Matrix GUI controller and Python library
 ===========
 ## LED Controller GUI
-This PyQt4 based GUI, allows you to control the individual LEDs on your matrix, as well as generate a text file encoding the 8x8 graphic.
-
-### Requirements
-* Python 2
-* PyQt4
-* max7219 (https://github.com/rm-hull/max7219)
+This PyQt5 based GUI, allows you to control the individual LEDs on your matrix, as well as generate a text file encoding the 8x8 graphic.
 
 ### Usage
-Launch either via the terminal, or through the Python 2 IDLE in Raspbian, when controlling the Desktop over a VNC server. PyQt4 programs do not work over the X11 remote desktop service, hence they must be launched through the Python 2 IDLE, and not through the terminal.
+Launch either via the terminal, or through the Python IDLE in Raspbian, when controlling the Desktop over a VNC server. PyQt programs do not work over the X11 remote desktop service, hence they must be launched through the Python IDLE, and not through the terminal.
 ```
 sudo python led-controller-gui.py
 ```
@@ -24,9 +19,10 @@ The 'Matrix orientation' dropdown box let's you control the orientation of the m
 This small library provides simple functions for lighting up the LEDs on a MAX7219 LED matrix using an array / matrix.
 
 ### Requirements
-* Python 2
+* Python 2 or 3
 * Raspberry Pi (any model will do) with Raspbian
 * max7219 (https://github.com/rm-hull/max7219)
+* NumPy (`pip install numpy`)
 
 ### Installation
 ```
@@ -66,8 +62,6 @@ Argument | Description
 array | 1-D array / 2-D NumPy matrix
 update  | Set by default to False. Set to True to update LEDs, one by one, creating a transition effect.
 transition  | Integer value in milliseconds. Only active if 'update' argument set to True. Specifies time delay for updating LEDs in matrix.
-
-
 
 `func.rotationAnim()`
 
