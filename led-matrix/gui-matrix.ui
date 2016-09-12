@@ -14,8 +14,8 @@
    <string>MAX7219 LED Matrix - Raspberry Pi</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="rsrc.qrc">
-    <normaloff>:/newPrefix/icon.ico</normaloff>:/newPrefix/icon.ico</iconset>
+   <iconset>
+    <normaloff>icon.ico</normaloff>icon.ico</iconset>
   </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
@@ -28,7 +28,7 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QRadioButton" name="radioButton">
+     <widget class="QRadioButton" name="radioButton_1">
       <property name="text">
        <string/>
       </property>
@@ -794,7 +794,6 @@
   <zorder>gridLayoutWidget_2</zorder>
  </widget>
  <resources>
-  <include location="rsrc.qrc"/>
  </resources>
  <connections/>
 </ui>
